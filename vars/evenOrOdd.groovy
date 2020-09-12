@@ -4,7 +4,7 @@ def call(int buildNumber) {
     pipeline {
       agent any
       triggers {
-        cron('17 22 * * 0-7')
+        cron('*/5 * * * 0-7')
       }
       stages {
         stage('Even Stage') {
@@ -17,6 +17,9 @@ def call(int buildNumber) {
   } else {
     pipeline {
       agent any
+      triggers {
+        cron('*/5 * * * 0-7')
+      }
       stages {
         stage('Odd Stage') {
           steps {
