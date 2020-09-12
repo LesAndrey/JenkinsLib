@@ -1,4 +1,4 @@
-def call(int buildNumber) {
+def timeTrigger(int buildNumber) {
     if (buildNumber % 2 == 0) {
         return '*/1 * * * 0-7'
     }else{
