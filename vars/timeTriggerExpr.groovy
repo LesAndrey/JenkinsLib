@@ -1,3 +1,3 @@
-def call() {
-    '*/1 * * * 0-7'
+String call() {
+    return '*/1 * * * 0-7'
 }
